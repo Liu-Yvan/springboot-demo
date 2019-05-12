@@ -7,7 +7,6 @@ ARG JAR_PATH="/apps/jars/app.jar"
 
 ENV JAR_PATH $JAR_PATH
 ENV JAVA_OPTS "-server -Xms256M -Xmx1024M -Xss1M -XX:MinHeapFreeRatio=30 -XX:MaxHeapFreeRatio=50 -XX:MaxMetaspaceSize=256M -XX:MinMetaspaceFreeRatio=20 -XX:MaxMetaspaceFreeRatio=30 -Duser.timezone=GMT+08"
-ENV JAVA_PROPS "-Djava.io.tmpdir=/tmp/tomcat -Djava.security.egd=file:/dev/./urandom"
 
 ADD target/${JAR_FILE} $JAR_PATH
 
