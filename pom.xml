@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <docker.server.id>172.17.0.1:5000</docker.server.id>
+        <docker.server.id>docker.domain.com:5000</docker.server.id>
     </properties>
 
     <dependencies>
