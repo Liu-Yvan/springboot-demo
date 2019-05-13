@@ -21,6 +21,6 @@ public class AppController {
 
     @GetMapping(value = "/hello")
     public String hello() {
-        return "hello";
+        return "helloworld";
     }
 }
